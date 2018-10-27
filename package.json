@@ -1,0 +1,11 @@
+{
+  "name": "es6playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aimable",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.2.0",
+    "node-fetch-polyfill": "^2.0.6"
+  }
+}
