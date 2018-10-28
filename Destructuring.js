@@ -22,7 +22,7 @@ const { address: {lines: [, line2]}} = person
 //console.log(line2) // ApT 24
 
 
-//spread operator ================================================
+//============ spread operator ================================================
 const computeTax = (taxRate, ...prices) =>{
     return prices.map(p => p * taxRate)
 }
@@ -96,3 +96,14 @@ console.log(sum(map), 'from map')
 console.log(sum(numbers))
 console.log(sum(numbers1))
 console.log(sum(number2))
+
+//=================================================================================
+const dog = {
+    name: 'shorty',
+    age: 4
+}
+const { name: dogName, age: dogAge} =  dog
+console.log(dogName, dogAge) // shorty 4
+
+
+

@@ -1,4 +1,7 @@
-const api =  './fakeApi'
+ /*************************************************************
+* Promises
+* ***********************************************************/
+
 const fetch = require('node-fetch')
 
 // ==== Callback based web request =========
@@ -18,7 +21,7 @@ const fetch = require('node-fetch')
 
 // ========== new in es6 ====
 
-fetch(api)
+fetch('https://jsonplaceholder.typicode.com/posts')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch((err) => {
