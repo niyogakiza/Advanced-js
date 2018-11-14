@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83850eec-3008-4f51-9fc6-4bce87377056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_tests_/productTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_tests_/shoppingCartTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/screens/ProductScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="83850eec-3008-4f51-9fc6-4bce87377056" name="Default Changelist" comment="Components and Testing reducers - actions - components">
+      <change afterPath="$PROJECT_DIR$/Refactoring/bill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/ApiSpecifications.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/httpServer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/routes/todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apis/serverHapi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encoding/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/encoding/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch-polyfill/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch-polyfill/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-web-streams/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-web-streams/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/safer-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/safer-buffer/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/web-streams-polyfill/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/web-streams-polyfill/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,12 +65,15 @@
     <session id="-1414354233">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,8 +82,9 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="2" />
           <entry key="java" value="1" />
-          <entry key="js" value="39" />
-          <entry key="json" value="1" />
+          <entry key="js" value="47" />
+          <entry key="json" value="7" />
+          <entry key="md" value="1" />
           <entry key="reduxTheory" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -76,8 +93,9 @@
         <counts>
           <entry key="Git file" value="2" />
           <entry key="HTML" value="2" />
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="29" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="37" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scratch" value="12" />
           <entry key="XML" value="1" />
@@ -86,18 +104,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="es6" value="4032" />
-          <entry key="js" value="12962" />
-          <entry key="md" value="153" />
+          <entry key="js" value="16054" />
+          <entry key="json" value="226" />
+          <entry key="md" value="791" />
           <entry key="reduxTheory" value="166" />
-          <entry key="txt" value="79" />
+          <entry key="txt" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="9337" />
-          <entry key="Markdown" value="153" />
-          <entry key="PLAIN_TEXT" value="245" />
+          <entry key="JSON" value="226" />
+          <entry key="JavaScript" value="12429" />
+          <entry key="Markdown" value="791" />
+          <entry key="PLAIN_TEXT" value="310" />
           <entry key="Scratch" value="7657" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="LanguageService" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -107,56 +132,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#1#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/screens/ProductScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="n#!!block;n#componentDidMount#0;n#ProductScreen#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_tests_/productTest.js">
+        <entry file="file://$PROJECT_DIR$/Refactoring/bill.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#147#172#0" expanded="true" />
-                <element signature="e#369#418#0" expanded="true" />
-                <element signature="e#696#712#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_tests_/shoppingCartTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="37" column="2" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#145#191#0" expanded="true" />
-                <element signature="e#707#857#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="91">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -210,6 +190,14 @@
         <option value="$PROJECT_DIR$/components/Product.js" />
         <option value="$PROJECT_DIR$/components/screens/ProductScreen.js" />
         <option value="$PROJECT_DIR$/_tests_/productTest.js" />
+        <option value="$PROJECT_DIR$/apis/httpServer.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/apis/serverHapi.js" />
+        <option value="$PROJECT_DIR$/apis/routes/todo.js" />
+        <option value="$PROJECT_DIR$/apis/ApiSpecifications.md" />
+        <option value="$PROJECT_DIR$/Refactoring/plays.json" />
+        <option value="$PROJECT_DIR$/Refactoring/invoice.json" />
+        <option value="$PROJECT_DIR$/Refactoring/bill.js" />
       </list>
     </option>
   </component>
@@ -237,9 +225,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -274,18 +262,12 @@
             <path>
               <item name="es6playground" type="b2602c69:ProjectViewProjectNode" />
               <item name="es6playground" type="462c0819:PsiDirectoryNode" />
-              <item name="_tests_" type="462c0819:PsiDirectoryNode" />
+              <item name="Refactoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="es6playground" type="b2602c69:ProjectViewProjectNode" />
               <item name="es6playground" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="es6playground" type="b2602c69:ProjectViewProjectNode" />
-              <item name="es6playground" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,7 +287,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="tasks" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -326,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.ScopeDefaults.js">
+  <component name="RunManager" selected="Node.js.bill.js">
     <configuration name="GeneratorsPromises.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/GeneratorsPromises.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -339,23 +321,23 @@
     <configuration name="base.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="base.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="generators.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/generators.js" working-dir="$PROJECT_DIR$">
+    <configuration name="bill.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="bill.js" working-dir="$PROJECT_DIR$/Refactoring">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.generators.js" />
       <item itemvalue="Node.js.ScopeDefaults.js" />
       <item itemvalue="Node.js.Promises.js" />
       <item itemvalue="Node.js.GeneratorsPromises.js" />
       <item itemvalue="Node.js.base.js" />
+      <item itemvalue="Node.js.bill.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.ScopeDefaults.js" />
+        <item itemvalue="Node.js.bill.js" />
         <item itemvalue="Node.js.base.js" />
+        <item itemvalue="Node.js.ScopeDefaults.js" />
         <item itemvalue="Node.js.GeneratorsPromises.js" />
         <item itemvalue="Node.js.Promises.js" />
-        <item itemvalue="Node.js.generators.js" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +354,14 @@
       <workItem from="1540639693577" duration="24919000" />
       <workItem from="1540668605507" duration="2966000" />
       <workItem from="1540672712419" duration="10967000" />
-      <workItem from="1540727982816" duration="14387000" />
+      <workItem from="1540727982816" duration="15260000" />
+      <workItem from="1540803877408" duration="164000" />
+      <workItem from="1540804055277" duration="56000" />
+      <workItem from="1540804124016" duration="70000" />
+      <workItem from="1540804206925" duration="1102000" />
+      <workItem from="1540919572783" duration="5895000" />
+      <workItem from="1542138495709" duration="7048000" />
+      <workItem from="1542220216426" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="Redux and functions pratice">
       <created>1540729878002</created>
@@ -388,11 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540735015298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Components and Testing reducers - actions - components">
+      <created>1540750437662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540750437662</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53239000" />
+    <option name="totallyTimeSpent" value="68698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -404,9 +400,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="778" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719626" visible="true" weight="0.12681745" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719626" visible="true" weight="0.19547658" />
       <window_info id="Structure" order="1" sideWeight="0.5045662" side_tool="true" weight="0.19538188" />
       <window_info id="Storybook" order="2" sideWeight="0.5438247" side_tool="true" weight="0.24156305" />
       <window_info id="Compare Directories" order="3" />
@@ -414,19 +410,21 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32896653" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.2801724" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39772728" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.46884736" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39719626" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32896653" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.9222395" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.9222395" />
       <window_info anchor="bottom" id="Code Review" order="10" weight="0.3281493" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32896653" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3291367" />
       <window_info anchor="bottom" id="GitHub Reviews" order="13" weight="0.32896653" />
       <window_info anchor="bottom" id="GitLabIntegration" order="14" weight="0.32751092" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.1881804" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.47196263" />
+      <window_info anchor="bottom" id="Atlassian " order="16" />
+      <window_info anchor="bottom" id="JIRA" order="17" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -499,42 +497,17 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="Redux and functions pratice" />
     <MESSAGE value="Larger state tree and refactoring reducers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Larger state tree and refactoring reducers" />
+    <MESSAGE value="Components and Testing reducers - actions - components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Components and Testing reducers - actions - components" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="javascript-exception">
-          <properties />
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+  <component name="atlassian-ide-plugin-workspace-issues">
+    <option name="view">
+      <JiraViewConfigurationBean>
+        <option name="viewFilterId" value="" />
+      </JiraViewConfigurationBean>
+    </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Iterators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GeneratorsPromises.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/GitScope.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -566,11 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#areaOfRectangle#0" expanded="true" />
-            <element signature="n#!!block;n#params#0" expanded="true" />
-            <element signature="n#!!block;n#add#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,25 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#add#0" expanded="true" />
-            <element signature="e#70#105#0" expanded="true" />
-            <element signature="n#!!block;n#f#0" expanded="true" />
-            <element signature="n#!!block;n#talk3#0" expanded="true" />
-            <element signature="n#!!block;n#talk3#1" expanded="true" />
-            <element signature="e#671#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Destructuring.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="105" column="40" lean-forward="true" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
-          <folding>
-            <element signature="e#570#613#0" expanded="true" />
-            <element signature="e#766#957#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,11 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#77#108#0" expanded="true" />
-            <element signature="e#355#380#0" expanded="true" />
-            <element signature="e#570#578#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,9 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-start-column="24" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#positiveNumbersUpTo#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,26 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#1#143#0" expanded="true" />
-            <element signature="n#!!block;n#f#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="n#!!doc;n#createStore#0" expanded="true" />
-            <element signature="n#!!block;n#createStore#0" expanded="true" />
-            <element signature="n#!!block;n#f#0;n#!!block;n#createStore#0" expanded="true" />
-            <element signature="n#!!block;n#su#0;n#!!block;n#createStore#0" expanded="true" />
-            <element signature="n#!!block;n#dis#0;n#!!block;n#createStore#0" expanded="true" />
-            <element signature="e#338#362#0" expanded="true" />
-            <element signature="e#677#687#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,9 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="62" />
-          <folding>
-            <element signature="e#1#137#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="48" />
-          <folding>
-            <element signature="e#1#146#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,11 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#1#146#0" expanded="true" />
-            <element signature="n#!!block;n#reducer#0" expanded="true" />
-            <element signature="n#!!block;n#shoppingCart#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,21 +624,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="37" column="2" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#145#191#0" expanded="true" />
-            <element signature="e#707#857#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Product.js">
+    <entry file="file://$PROJECT_DIR$/_tests_/productTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#1#147#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="258">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -736,23 +638,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#ProductScreen#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_tests_/productTest.js">
+    <entry file="file://$PROJECT_DIR$/components/Product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#147#172#0" expanded="true" />
-            <element signature="e#369#418#0" expanded="true" />
-            <element signature="e#696#712#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Destructuring.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="72" column="27" lean-forward="true" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GeneratorsPromises.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iterators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/ApiSpecifications.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/httpServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/serverHapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apis/routes/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Refactoring/invoice.json" />
+    <entry file="file://$PROJECT_DIR$/Refactoring/plays.json" />
+    <entry file="file://$PROJECT_DIR$/Refactoring/bill.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

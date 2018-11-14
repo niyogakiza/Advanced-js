@@ -5,7 +5,11 @@
   "author": "Aimable",
   "license": "MIT",
   "dependencies": {
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "hapi": "^17.6.0",
     "node-fetch": "^2.2.0",
-    "node-fetch-polyfill": "^2.0.6"
+    "node-fetch-polyfill": "^2.0.6",
+    "nodemon": "^1.18.5"
   }
 }
