@@ -25,7 +25,6 @@ let plays = {
   "othello": {"name": "Othello", "type": "tragedy"}
 }
 
-
 function statement(invoice, plays) {
     let totalAmount = 0
     let volumeCredits = 0
@@ -34,9 +33,7 @@ function statement(invoice, plays) {
         {style: 'currency', currency: 'USD', minimumFractionDigits: 2}).format
 
     for (let perf of invoice.performance) {
-
         let play = plays[perf.playID]
-
         let thisAmount = 0
 
         switch (play.type) {

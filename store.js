@@ -42,4 +42,18 @@ function createStore(reducer, initialState) {
    Current state: 2
    Current state: 3
    ==================*/
-
+// formatDisabledDates = () => {
+  //   return this.props.disabledDays.map(date =>
+  //     moment.unix(date).format(formattedDates)).reduce((object, date) => {
+  //     return {
+  //       ...object,
+  //       [date]: { disabled: true, textColor: 'grey' } }
+  //   }, {})
+  // }
+   const dayConverted = (day1, day2) => {
+    const formattedDates = 'YYYY-MM-DD'
+    const dayUnixFormat = moment(day1.dateString).format('X')
+    const todayFormat = (day1) => moment.unix(day1).format(formattedDates)
+    const converted = todayFormat(day2.date)
+    return converted === todayFormat(dayUnixFormat)
+  }
